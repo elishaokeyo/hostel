@@ -1,5 +1,6 @@
 <?php
 // On Wasmer the database details come from environment variables. 
+
 // On your own PC the values after the ?: are used instead.
 function env_or(string $key, string $default): string
 {
