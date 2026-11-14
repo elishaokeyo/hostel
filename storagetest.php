@@ -1,5 +1,6 @@
 <?php
 require __DIR__ . '/config.php';
+
 header('Content-Type: text/plain');
 $f = UPLOAD_DIR . '/_persist_marker.txt';
 if (!file_exists($f)) { file_put_contents($f, date('c')); echo "Marker CREATED just now.\n"; }
