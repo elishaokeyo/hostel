@@ -10,6 +10,7 @@ function env_or(string $key, string $default): string
     }
     return ($v !== false && $v !== '') ? (string)$v : $default;
 }
+
 define('DB_HOST', env_or('DB_HOST', 'localhost'));
 define('DB_PORT', env_or('DB_PORT', '3306'));
 define('DB_NAME', env_or('DB_NAME', 'hostel_finder'));
